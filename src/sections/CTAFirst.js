@@ -1,3 +1,4 @@
+import ModalVideo from "@/components/ModalVideo";
 import Button from "@/ui/Button";
 import { ArrowRight, CirclePlay } from "lucide-react";
 import React from "react";
@@ -37,13 +38,13 @@ export default function CTAFirst() {
             className={
               "font-extrabold bg-linear-to-br py-4 px-6 rounded-full from-[#24C367] to-[#0AB7CD] text-white hover:from-[#1FA855] hover:to-[#0896AD] hover:transform hover:scale-102 hover:opacity-75"
             }
+            href={"https://letuchka-delta.vercel.app/auth"}
+            target={"_blank"}
+            rel={"noopener noreferrer nofollow"}
           />
 
-          <Button
-            title={"Смотреть демо"}
-            icon={<CirclePlay />}
-            iconPosition={"left"}
-            className={
+          <ModalVideo
+            buttonStyle={
               "font-extrabold py-4 px-6 rounded-full bg-white border border-[#F3F4F6] text-foreground hover:transform hover:scale-102 hover:text-[#24C367] hover:border-[#24C367] hover:bg-[#F3F4F6] "
             }
           />

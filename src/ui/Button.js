@@ -8,8 +8,22 @@ export default function Button({
   title,
   icon,
   iconPosition,
+  href,
+  target,
+  rel,
 }) {
-  return (
+  return href ? (
+    <a
+      href={href}
+      target={target}
+      rel={rel}
+      className={`cursor-pointer duration-300 ease-in flex items-center justify-center gap-4 ${className}`}
+    >
+      {icon && iconPosition === "left" && icon}
+      {title}
+      {icon && iconPosition === "right" && icon}
+    </a>
+  ) : (
     <button
       className={`cursor-pointer duration-300 ease-in flex items-center justify-center gap-4 ${className}`}
       onClick={onClick}

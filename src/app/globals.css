@@ -154,3 +154,7 @@
 img {
   -webkit-user-drag: none;
 }
+
+.swiper-slide {
+  height: auto !important;
+}

@@ -69,9 +69,9 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-2 no-underline">
               <span
                 aria-hidden="true"
-                className="w-8 h-8 md:w-8 md:h-8 sm:w-7 sm:h-7 w-6 h-6 rounded-lg md:rounded-lg rounded-md bg-linear-to-br from-[#C6FC81] to-[#ACE565]"
+                className="md:w-8 md:h-8 sm:w-7 sm:h-7 w-6 h-6 md:rounded-lg rounded-md bg-linear-to-br from-[#C6FC81] to-[#ACE565]"
               />
-              <span className="text-xl md:text-xl sm:text-lg text-base font-semibold">
+              <span className="text-xl md:text-xl sm:text-lg font-semibold">
                 Название
               </span>
             </Link>
@@ -97,7 +97,7 @@ export default function Header() {
           <a
             href="https://letuchka-delta.vercel.app/reg"
             rel="nofollow"
-            className="px-5 py-3 md:px-5 md:py-3 sm:px-4 sm:py-2 px-3 py-2 rounded-md bg-[#1F2937] text-white font-bold cursor-pointer duration-300 ease-in hover:bg-[#24C367] md:text-base sm:text-sm text-xs whitespace-nowrap"
+            className="md:px-5 md:py-3 sm:px-4 sm:py-2 px-3 py-2 rounded-md bg-[#1F2937] text-white font-bold cursor-pointer duration-300 ease-in hover:bg-[#24C367] md:text-base sm:text-sm text-xs whitespace-nowrap"
           >
             Регистрация
           </a>

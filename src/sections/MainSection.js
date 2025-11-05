@@ -3,6 +3,7 @@ import shadowFlare from "@/assets/img/shadow-flare.png";
 import React from "react";
 import { Activity, ArrowRight, CirclePlay } from "lucide-react";
 import Button from "@/ui/Button";
+import ModalVideo from "@/components/ModalVideo";
 
 export default function MainSection() {
   return (
@@ -43,13 +44,13 @@ export default function MainSection() {
           className={
             "font-extrabold sm:text-base text-xs md:w-auto w-full bg-linear-to-br py-3 px-6 rounded-lg from-[#24C367] to-[#0AB7CD] text-white hover:transform hover:scale-102 hover:opacity-75"
           }
+          href={"https://letuchka-delta.vercel.app/auth"}
+          target={"_blank"}
+          rel={"noopener noreferrer nofollow"}
         />
 
-        <Button
-          title={"СМОТРЕТЬ ДЕМО"}
-          icon={<CirclePlay />}
-          iconPosition={"left"}
-          className={
+        <ModalVideo
+          buttonStyle={
             "font-extrabold sm:text-base text-xs py-3 px-6 md:w-auto w-full  rounded-lg bg-white border border-[#F3F4F6] text-foreground hover:transform hover:scale-102 hover:bg-[#F3F4F6] "
           }
         />
