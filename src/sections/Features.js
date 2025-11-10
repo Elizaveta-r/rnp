@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import FirstFeature from "@/assets/img/features/1.svg";
+import FirstFeature from "@/assets/img/create-task.png";
 import Line from "@/assets/icons/Line";
 import LineFull from "@/assets/icons/LineFull";
 import Telegram from "@/assets/icons/Telegram";
@@ -11,7 +11,7 @@ import SecondChildImg1 from "@/assets/img/features/2.1.png";
 import SecondChildImg2 from "@/assets/img/features/2.2.png";
 import SecondChildImg3 from "@/assets/img/features/2.3.png";
 
-import Report from "@/assets/img/reports.svg";
+import Report from "@/assets/img/report.png";
 import SectionTitle from "@/components/SectionTitle";
 
 export default function Features() {
@@ -33,7 +33,7 @@ export default function Features() {
               <>
                 Назначайте рутинные задачи на конкретные должности или
                 подразделения с жестким временным слотом. <br /> Система сама
-                отправит напоминание и проконтролирует выполнение точно в срок
+                отправит напоминание и проконтролирует выполнение точно в срок.
               </>
             }
           >
@@ -46,7 +46,7 @@ export default function Features() {
                 Создавайте <b>Подразделения</b> и <b>Должности</b> в веб-панели.{" "}
                 <br /> Назначайте рутинные задачи на конкретную <b>Должность</b>{" "}
                 (например, {`"Продавец"`}), а не на каждого сотрудника
-                индивидуально
+                индивидуально.
               </>
             }
           >
@@ -98,7 +98,7 @@ const Card = ({ title, text, children, hasBg = true }) => {
 
 const FirstChild = () => {
   return (
-    <div className="relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center py-3">
       <figure className="absolute sm:left-7 left-1 top-13 p-2.5 bg-white rounded-lg shadow-icons">
         <CalendarClock size={30} />
       </figure>
@@ -111,11 +111,13 @@ const FirstChild = () => {
       <figure className="absolute sm:right-5 -right-2 bottom-17 rotate-4 p-2.5 bg-white rounded-lg shadow-icons">
         <Telegram />
       </figure>
-      <Image
-        src={FirstFeature}
-        className="object-cover"
-        alt="Cоздание задачи"
-      />
+      <div className="xl:max-w-[25vw] lg:max-w-[30vw] md:max-w[45vw] max-w-[65vw] px-4">
+        <Image
+          src={FirstFeature}
+          className="object-cover w-full rounded-2xl"
+          alt="Cоздание задачи"
+        />
+      </div>
     </div>
   );
 };

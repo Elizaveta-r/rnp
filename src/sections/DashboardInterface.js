@@ -1,6 +1,6 @@
 import React from "react";
 
-import DashboardScreenshot from "@/assets/img/dashboard.svg";
+import DashboardScreenshot from "@/assets/img/dashboard.png";
 import Image from "next/image";
 import LineInterface from "@/assets/icons/LineInterface";
 import LineAll from "@/assets/icons/LineAll";

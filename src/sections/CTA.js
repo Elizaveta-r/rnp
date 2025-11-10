@@ -14,11 +14,11 @@ export default function CTA() {
         </div>
 
         <h2 className="text-2xl sm:text-6xl font-bold text-[#1F2937] leading-[120%] mb-6">
-          Искусственный интеллект берёт на себя рутину.
+          Искусственный интеллект берёт на себя рутину
           <br />
           <span className="relative inline-block">
             <span className="relative z-10 font-extrabold text-transparent bg-clip-text bg-linear-to-r from-[#24C367] to-[#0AB7CD]">
-              Вы — управляете.
+              Вы — управляете
             </span>
             <span className="absolute -bottom-2 left-0 right-0 h-3 bg-linear-to-r from-[#24C367]/20 to-[#0AB7CD]/20 blur-sm"></span>
           </span>
@@ -26,10 +26,10 @@ export default function CTA() {
 
         <p className="text-[#666666] text-base sm:text-2xl mb-10 leading-[170%] font-medium">
           <span className="inline-block mr-2">🎯</span>
-          Рука на пульсе — это когда всё работает само.
+          Рука на пульсе — это когда всё работает само
           <br />
           <span className="font-semibold text-[#1F2937]">
-            Вы видите только результат и принимаете решения.
+            Вы видите только результат и принимаете решения
           </span>
         </p>
 
